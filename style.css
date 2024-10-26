@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Regular.eot'); /* IE9 */
+    src: url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/TTLakes-Regular.woff') format('woff'), /* Modern browsers */
+         url('fonts/TTLakes-Regular.ttf') format('truetype'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Medium.eot'); /* IE9 */
+    src: url('fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/TTLakes-Medium.woff') format('woff'), /* Modern browsers */
+         url('fonts/TTLakes-Medium.ttf') format('truetype'); /* Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Bold.eot'); /* IE9 */
+    src: url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/TTLakes-Bold.woff') format('woff'), /* Modern browsers */
+         url('fonts/TTLakes-Bold.ttf') format('truetype'); /* Legacy iOS */
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: 'TT Lakes', sans-serif; 
+}
+
+body{
+    font-weight: 500;
+    background-color: #F8F8F8;   
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+html,
+body,
+ul,
+h1, 
+p, 
+figure,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.burger-menu {
+    background-color: #fff;
+    width: 320px;
+    height: 100vh;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 0 52px rgba(14, 24, 80, 0.2);
+}
+
+.mobile-menu {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    justify-content: space-between; 
+}
+
+.mobile-menu__left-block {
+    align-items: center;
+    display: flex;
+}
+
+.mobile-menu__logo {
+    margin-left: 20px;
+}
+
+.action-menu {
+    display: flex;
+}
+
+.action-menu__service,
+.action-menu__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-menu__button {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    transition: opacity 0.5s ease;
+}
+
+.action-menu__button--close::after,
+.action-menu__button--search::after,
+.action-menu__button--call::after,
+.action-menu__button--message::after,
+.action-menu__button--profile::after
+ {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(img/burger.png);
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+
+.action-menu__button--search::after {
+    background-image: url(img/search.png);
+}
+.action-menu__button--call::after {
+    background-image: url(img/call.png);
+}
+.action-menu__button--message::after {
+    background-image: url(img/chat.png);
+}
+.action-menu__button--profile::after {
+    background-image: url(img/profile.png);
+}
+
+.burger-menu__nav {
+    margin-top: 40px;
+}
+
+.burger-menu__item {
+    margin-bottom: 32px;
+}
+
+.burger-menu__link-page--active {
+    margin-left: -24px;
+    padding-left: 21px;
+    border-left: 3px solid #41F6D7;
+    color: #7E7E82;
+}
+
+.action-menu__button:hover {
+    opacity: 0.7;
+}
+
+.action-menu__button--call,
+.action-menu__button--message {
+    margin-right: 16px;
+}
+
+.burger-menu__bottom {
+    margin-top: auto;
+}
+
+.burger-menu__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.burger-menu__email {
+    margin-bottom: 12px;
+}
+
+.burger-menu__phone-number {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.burger-menu__langs {
+    margin-top: 40px;
+    display: flex;
+}
+
+.burger-menu__lang-item {
+    margin-right: 7px;
+}
+
+.burger-menu__link-lang--active {
+    color: #7E7E82;
+}
